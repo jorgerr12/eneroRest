@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Menu from '../components/Menu.jsx';
+import Reservations from '../components/Reservations.astro';
+import Location from '../components/Location.jsx';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Restaurante - Bienvenidos">
+  <Header />
+  <main>
+    <Hero />
+    <Menu client:load />
+    <Reservations />
+    <Location client:load />
+    <Footer />
+  </main>
+</Layout>
